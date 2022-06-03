@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+#main {
+  width: 360px;
+  height: 420px;
+  border: 10px solid #000000;
+  border-radius: 25px;
+  background-color: #b7d4a8;
+  margin: 50px auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column;
+      flex-flow: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+#main #stage {
+  width: 304px;
+  height: 304px;
+  border: 2px solid #000;
+  position: relative;
+}
+#main #stage #snake {
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  background-color: #b7d4a8;
+}
+#main #stage #snake > div {
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border: 1px solid #b7d4a8;
+  position: absolute;
+}
+#main #stage #food {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 40px;
+  top: 100px;
+}
+#main #stage #food > div {
+  width: 4px;
+  height: 4px;
+  background-color: #000;
+}
+#main #result {
+  width: 304px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Courier";
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
