@@ -71,7 +71,7 @@ class Snake {
         let checkPosition = axle === "X" ? "offsetLeft" : "offsetTop";
         //注意顺序! 
         //如果此时蛇头的left/top等于新设置的蛇头的值,那么就是掉头了,并且此时已经在向新方向在移动了!!!!!!!!!!
-        //@ts-ignore
+        // @ts-ignore
         if (one && one[checkPosition] === newValue) {
             //说明掉头了
             // console.log("掉头了");
